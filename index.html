@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>UpAndDown-Game</title>
+  </head>
+  <body>
+    <div class="game_machine">
+      <div class="game_monitor_border">
+        <div class="game_monitor">
+          <h1>Pick your <br />Today's Number</h1>
+          <input type="number" min="1" max="100" id="userInput" class="user_input" />
+          <p class="blinking">오늘, 당신이 pick한 번호는?</p>
+        </div>
+      </div>
+      <div class="button_container">
+        <button id="go-button" class="core_button go_button">GO !</button>
+        <button id="reset-button" class="core_button reset_button">RESET</button>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
