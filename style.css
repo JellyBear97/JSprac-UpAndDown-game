@@ -4,13 +4,25 @@
   -webkit-appearance: none;
 }
 
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.emphasized_letter_effect {
+  color: rgb(253, 253, 253);
+  background-color: rgb(170, 129, 94);
+  border-radius: 10px;
+  padding: 4px 2px 1px 2px;
+}
+
 .game_machine {
   background-color: rgb(233, 205, 158);
-  max-width: 500px;
+  max-width: 600px;
   margin: 100px auto;
   padding: 20px;
-  height: 600px;
+  height: 515px;
   border-radius: 50px;
+  box-shadow: 0px 15px 0px 0px rgb(172, 152, 117);
 }
 
 .game_monitor_border {
@@ -32,6 +44,7 @@
 
 .game_monitor>p {
   height: 16px;
+  color: #4e4e4e;
 }
 
 .blinking {
@@ -49,8 +62,11 @@
   }
 }
 
-.outer_container>h1 {
+.game_monitor>h1 {
+  display: flex;
+  align-items: center;
   text-align: center;
+  height: 78px;
 }
 
 .user_input {
@@ -67,7 +83,7 @@
 }
 
 .button_container {
-  margin-top: 35px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   gap: 130px;
@@ -75,7 +91,7 @@
 
 .core_button {
   width: 150px;
-  height: 150px;
+  height: 130px;
   font-weight: 800;
   font-size: 30px;
   background-color: #fff;
@@ -88,8 +104,8 @@
 
 .go_button {
   color: red;
-  border: 1px solid red;
-  box-shadow: 0px 5px 0px 0px #d20c0c;
+  border: 8px solid red;
+  box-shadow: 0px 8px 0px 0px #d20c0c;
 }
 
 .go_button:hover {
@@ -100,8 +116,8 @@
 
 .reset_button {
   color: green;
-  border: 1px solid green;
-  box-shadow: 0px 5px 0px 0px #007144;
+  border: 8px solid green;
+  box-shadow: 0px 8px 0px 0px #007144;
 }
 
 .reset_button:hover {
@@ -109,3 +125,19 @@
   margin-bottom: 5px;
   box-shadow: 0px 0px 0px 0px #007144;
 }
+
+.disabled_button {
+  display: none;
+}
+
+/* .disabled_button {
+  color: rgb(103, 100, 100);
+  border: 8px solid rgb(103, 100, 100);
+  box-shadow: 0px 8px 0px 0px rgb(72, 72, 72);
+}
+
+.disabled_button:hover {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 0px 0px rgb(72, 72, 72);
+} */

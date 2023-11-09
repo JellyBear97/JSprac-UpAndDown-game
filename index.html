@@ -11,9 +11,11 @@
     <div class="game_machine">
       <div class="game_monitor_border">
         <div class="game_monitor">
-          <h1>Pick your <br />Today's Number</h1>
-          <input type="number" min="1" max="100" id="userInput" class="user_input" />
-          <p class="blinking">오늘, 당신이 pick한 번호는?</p>
+          <h1 id="main-game-header-area" class="blinking">Guess the <br />random number</h1>
+          <input type="number" min="1" max="100" id="userInput-area" class="user_input" />
+          <p>
+            range is "1~100", You can have a <span class="font-weight-bold"> <span id="chances-area" class="emphasized_letter_effect">5</span> CHANCES </span>
+          </p>
         </div>
       </div>
       <div class="button_container">
